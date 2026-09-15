@@ -1,11 +1,11 @@
 #KT, hello user
 
 while True:
-    name = input("tell me your name")
+    name = input("tell me your name:")
     if name.isneumeric():
-        print("that isn't a number")
+        print("that isn't a name")
     else:
         break
 
-print("hello {name}!")
+print(f"hello {name}!")
 
