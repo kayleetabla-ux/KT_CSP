@@ -2,7 +2,7 @@
 
 while True:
     name = input("tell me your name:")
-    if name.isneumeric():
+    if name.isnumeric():
         print("that isn't a name")
     else:
         break
