@@ -24,3 +24,5 @@ print(f"your rent is ${transport:.2f} and that is {int(round((transport/income)*
 
 print("you should save $300.00 a month, that's 10% of your income")
 
+print(f"You have ${income-(rent_mortgage+utilities+groceries+transport):.2f} of spending money each month!")
+
