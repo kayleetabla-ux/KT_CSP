@@ -40,7 +40,7 @@ if {symbol}==True:
     ({increment}+1)
 if {increment}==5:
     print("your password strength is: medium")
-if {increment}<=2:
+if {increment}==1 or 2:
     print("your password strength is: weak")
 if {increment}==3 or 4:
     print("your password stregth is: strong")
