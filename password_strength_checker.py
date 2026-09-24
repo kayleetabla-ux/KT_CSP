@@ -9,7 +9,7 @@ symbol = False
 length = False
 increment = 0
 feedback = "to make it strong:"
-if len (password)>=8:
+if len(password)>=8:
     length = True
     print(f"at least 8 characters long: {length}")
 else:
