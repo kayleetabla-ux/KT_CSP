@@ -30,7 +30,7 @@ print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
 if {password}==True:
     ({increment}+1)
-if {upercase}==True:
+if {uppercase}==True:
     ({increment}+1)
 if {lowercase}==True:
     ({increment}+1)
