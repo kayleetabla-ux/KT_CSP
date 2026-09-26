@@ -18,8 +18,7 @@ while attempts < max_attempts and is_correct == False:
         print("To high!")
     else:
         print("To low!")
- 
-if guess == False:
-    print("you lost! the secret number was ", (numbers))
+if is_correct == False:
+    print(f"you lost! the secret number was {numbers}", )
 
     
