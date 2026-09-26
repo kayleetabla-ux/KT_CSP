@@ -29,7 +29,7 @@ print(f"Has a lowercase letter: {lowercase}")
 print(f"Has an uppercase letter: {uppercase}")
 print(f"Has a number: {number}")
 print(f"Has a symbol: {symbol}")
-if password==True:
+if length==True:
     increment = increment+1
 else:
     feedback = feedback+" make your password 8 characters long" 
