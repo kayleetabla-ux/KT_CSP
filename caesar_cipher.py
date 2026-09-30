@@ -7,11 +7,26 @@ message = input("Enter your message:")
 def shift (shift_amount,message):
     words = ""
     for letter in message:
+        if Encript_decript == "e" or "E":
+            if letter.isalpha():
+                letter = ord(letter)+ shift_amount
+                letter = chr(letter)
+            words+= letter
+    print(words)    
+    
+    if Encript_decript == "d" or "D":
         if letter.isalpha():
-            letter = ord(letter)+ shift_amount
+            letter = ord(letter)-shift_amount
             letter = chr(letter)
-        words+= letter
+        words+=letter
     print(words)
+
+
+
+    
+        
+
+  
 
 
 
