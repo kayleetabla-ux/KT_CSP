@@ -10,18 +10,20 @@ def shift (shift_amount,message):
         print(letter)
         if Encript_decript == "e" or Encript_decript == "E":
             if letter.isalpha():
+                capitalized = letter.isupper()
                 letter = ord(letter)+ shift_amount
-                if letter is lower and letter>z:
-                    26+172
+                if not capitalized and letter>ord('z'):
+                    letter-=26
                 letter = chr(letter)
             words+= letter   
             print(letter)
     
         if Encript_decript == "d" or Encript_decript == "D":
             if letter.isalpha():
+                capitalized = letter.isupper()
                 letter = ord(letter)-shift_amount
-                if letter is upper and letter>Z:
-                    26+132
+                if capitalized and letter>132:
+                    letter+=26
                 letter = chr(letter)
             words+=letter
             print(letter)
@@ -30,7 +32,7 @@ def shift (shift_amount,message):
 
 
     
-        
+
 
   
 
@@ -38,4 +40,3 @@ def shift (shift_amount,message):
 
 
 shift(shift_amount,message)
-
