@@ -11,7 +11,8 @@ def shift (shift_amount,message):
         if Encript_decript == "e" or Encript_decript == "E":
             if letter.isalpha():
                 letter = ord(letter)+ shift_amount
-                if letter  is lower
+                if letter is lower and letter>z:
+                    26+172
                 letter = chr(letter)
             words+= letter   
             print(letter)
@@ -19,6 +20,8 @@ def shift (shift_amount,message):
         if Encript_decript == "d" or Encript_decript == "D":
             if letter.isalpha():
                 letter = ord(letter)-shift_amount
+                if letter is upper and letter>Z:
+                    26+132
                 letter = chr(letter)
             words+=letter
             print(letter)
