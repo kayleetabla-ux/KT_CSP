@@ -70,7 +70,7 @@ with open("hangman.txt","r") as file:
             with open("hangman_win_loss.txt", "r") as win_loss:
                 content = win_loss.read()
                 rate = content.split(",")
-                value = 
+                value =
                 #reference file noes to see how to add to a specific part of the line of hangman_win_loss.txt.
                 #add 1 each time.
                 #then go back to the video to see how to continue this code. time to continue: 20:53
