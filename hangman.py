@@ -1,28 +1,95 @@
 #KT, hangman
 
 import random
+with open("hangman.txt","r") as file:
+    content = file.read()
+    words = content.split(",")
+    answer = random.choice(words)
 
-hangman_art = {0:("   ",
-                  "   ",
-                  "   "),
-               1:(" O ",
-                  "   ",
-                  "   "),
-               2:(" O ",
-                  " | ",
-                  "   "),
-               3:(" O ",
-                  "/|",
-                  "   "),
-               4:(" O ",
-                  "/|\\",
-                  "  "),
-               5:(" O ",
-                  "/|\\",
-                  "/  "),
-               6:(" O ",
-                  "/|\\",
-                  "/ \\"),}
+
+wrong_guesses = 0
+guess = 1
+
+def display_man(wrong_guesses):
+    if wrong_guesses == 0
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |
+        |
+        |_____
+            """)
+    elif wrong_guesses == 1:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |
+        |_____
+            """)
+    elif wrong_guesses == 2:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |    |
+        |_____
+            """)
+    elif wrong_guesses == 3:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |   /|
+        |_____
+            """)
+    elif wrong_guesses == 4:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |   /|\\
+        |_____
+            """)
+    elif wrong_guesses == 5:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |   /|\\
+        |___/_
+            """)
+    elif wrong_guesses == 6:
+        print(f"""_____
+                    wrong_guesses = {wrong_guesses}
+        |    |      
+        |    O
+        |   /|\\
+        |___/_\\
+            """)
+        
+for answer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+letter = ""
+for letter in word:
 
 def display_man(wrong_guesses):
     for line in hangman_art[wrong_guesses]:
@@ -33,6 +100,7 @@ def display_hint(hint):
 
 def display_answer(answer):
     print(" ".join(answer))
+
 
 with open("hangman.txt","r") as file:
     content = file.read()
@@ -70,7 +138,12 @@ with open("hangman.txt","r") as file:
             with open("hangman_win_loss.txt", "r") as win_loss:
                 content = win_loss.read()
                 rate = content.split(",")
-                value = 
+                word = content.find("win:")
+                content+= 1
+                win_loss(content)
+                print("you won!")
+        
+
                 #reference file noes to see how to add to a specific part of the line of hangman_win_loss.txt.
                 #add 1 each time.
                 #then go back to the video to see how to continue this code. time to continue: 20:53
