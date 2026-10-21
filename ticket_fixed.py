@@ -1,22 +1,23 @@
-age = int(input("Enter your age: "))
-matinee = input("Is this a matinee? (yes/no): ").lower()
+while True:
+    try:
+        age = int(input("Enter your age: "))
+        matinee = input("Is this a matinee? (yes/no): ").lower()
 
-if age.isnumeric()== True:
-    if age == 0:
-        price = 0 
-    elif age < 5:
-        price = 0
-    elif age < 12:
-        price = 8
-    elif age < 65:
-        price = 12
-    else:
-        price = 9
 
-    if matinee == "yes" and price != 0:
-        price = price - 3
+        if age < 5:
+            price = 0
+        elif age < 12:
+            price = 8
+        elif age < 65:
+            price = 12
+        else:
+            price = 9
 
-    print(f"Ticket price: ${price}")
+        if matinee == "yes" and price != 0:
+            price = price - 3
 
-if age.isnumeric()== False:
-    print("invalid input")
+        print(f"Ticket price: ${price}")
+        break
+    except ValueError:
+        print("Invalid input")
+        break
